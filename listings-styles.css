@@ -1,0 +1,25 @@
+.listings {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.listing {
+    margin-bottom: 20px;
+}
+
+.listing img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.listing h2 {
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.listing p {
+    font-size: 18px;
+    color: #555;
+}
