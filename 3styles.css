@@ -21,21 +21,25 @@ header {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 600px;
     margin: 20px auto;
 }
 
 input[type="text"] {
-    margin: 0 10px;
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 300px;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
+    font-weight: normal;
+}
+
+input::placeholder {
+    color: #000;
+    font-weight: bold;
 }
 
 .hero {
@@ -73,60 +77,14 @@ input[type="text"] {
 
 .listing {
     margin-bottom: 20px;
+    text-align: center; /* Center-aligns the text */
 }
 
 .listing img {
-    width: 100%;
+    width: 96%; /* Reduced the width by 4% */
     height: auto;
     border-radius: 10px;
 }
 
 .listing h2 {
     font-size: 24px;
-    margin: 10px 0 5px;
-}
-
-.listing p {
-    font-size: 18px;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero {
-        padding: 30px 10px;
-        flex-direction: column;
-    }
-
-    .listings {
-        flex-direction: column;
-    }
-
-    .listing {
-        margin-bottom: 15px;
-    }
-}
-
-footer {
-    background-color: #f7f7f7;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-nav, .footer-social {
-    margin-bottom: 10px;
-}
-
-.footer-nav a, .footer-social a {
-    margin: 0 10px;
-    color: #555;
-    text-decoration: none;
-}
-
-.footer-nav a:hover, .footer-social a:hover {
-    color: #000;
-}

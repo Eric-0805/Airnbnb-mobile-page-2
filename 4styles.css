@@ -73,6 +73,20 @@ input[type="text"] {
 
 .listing {
     margin-bottom: 20px;
+    text-align: left; 
+}
+
+.listing.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.listing .image-container {
+    flex: 1 1 45%;
+    margin: 10px;
+    max-width: 400px;
 }
 
 .listing img {
@@ -82,13 +96,15 @@ input[type="text"] {
 }
 
 .listing h2 {
-    font-size: 24px;
+    font-size: 27px;
     margin: 10px 0 5px;
+    margin-left: calc(2.5%);
 }
 
 .listing p {
-    font-size: 18px;
+    font-size: 21px;
     color: #555;
+    margin-left: calc(2.5%);
 }
 
 @media (max-width: 768px) {
@@ -108,6 +124,11 @@ input[type="text"] {
 
     .listing {
         margin-bottom: 15px;
+    }
+
+    .listing .image-container {
+        flex: 1 1 100%;
+        max-width: none;
     }
 }
 

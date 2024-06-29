@@ -15,28 +15,31 @@ header {
 
 #airbnb-logo {
     width: 5vw;
-    height: 5vh;
+    height: auto;
     object-fit: cover;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 7500px;
     margin: 20px auto;
 }
 
 input[type="text"] {
-    margin: 0 10px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px; 
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 300px;
+    width: 100%; 
     box-sizing: border-box;
     text-align: center;
+    font-size: 30px; 
 }
+
 
 .hero {
     display: flex;
@@ -44,6 +47,7 @@ input[type="text"] {
     align-items: center;
     padding: 20px;
     background-color: #f5f5f5;
+    flex-wrap: wrap;
 }
 
 .hero-section {
@@ -53,6 +57,9 @@ input[type="text"] {
     text-align: center;
     padding: 10px;
     flex: 1;
+    min-width: 120px;
+    margin: 10px;
+
 }
 
 .hero-section i {
@@ -73,22 +80,27 @@ input[type="text"] {
 
 .listing {
     margin-bottom: 20px;
+    text-align: left; 
 }
 
 .listing img {
-    width: 100%;
+    width: 96%;
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .listing h2 {
-    font-size: 24px;
+    font-size: 27px;
     margin: 10px 0 5px;
+    margin-left: calc(2.5%);
 }
 
 .listing p {
-    font-size: 18px;
+    font-size: 21px;
     color: #555;
+    margin-left: calc(2.5%);
 }
 
 @media (max-width: 768px) {
@@ -130,3 +142,5 @@ footer {
 .footer-nav a:hover, .footer-social a:hover {
     color: #000;
 }
+
+
