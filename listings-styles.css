@@ -6,20 +6,25 @@
 
 .listing {
     margin-bottom: 20px;
+    text-align: left; 
 }
 
 .listing img {
-    width: 100%;
+    width: 96%;
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .listing h2 {
-    font-size: 24px;
+    font-size: 27px;
     margin: 10px 0 5px;
+    margin-left: calc(2.5%);
 }
 
 .listing p {
-    font-size: 18px;
+    font-size: 21px;
     color: #555;
+    margin-left: calc(2.5%);
 }
